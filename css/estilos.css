@@ -1,0 +1,28 @@
+.titulo{
+    width: 15%;
+    margin:10px auto;
+    margin-top: 0px;
+	display:block;
+}
+.cabecera{
+    padding: 5px;
+    background-color: rgb(255,255, 255);
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index:1;
+}
+.cuerpo{
+    padding-top: 10%;
+    background-color: rgb(230, 255, 255);
+    z-index: 0;
+}
+.botones{
+    margin: auto;
+}
+.album{
+    background-color: rgb(255,255, 255);
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
