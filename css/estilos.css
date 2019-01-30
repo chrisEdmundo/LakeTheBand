@@ -25,4 +25,12 @@
 .album{
     background-color: rgb(255,255, 255);
     box-shadow: 0 0 10px rgba(0,0,0,.1);
+    height: 300px;
+    overflow: auto;
+}
+body{
+    overflow-x: hidden;
+}
+.albumes{
+    margin-bottom: 5%;
 }

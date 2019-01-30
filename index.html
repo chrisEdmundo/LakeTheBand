@@ -1,27 +1,30 @@
+<!DOCTYPE html>
 <html>
 <head>
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
         <link href="css/estilos.css" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
 </head>
 <body>
     <header class="cabecera">
         <img src="media/lake.jpg" class="titulo">
     </header>
     <div class="cuerpo">
+        <audio id="bgsound" src="media/Wedding_Days.mp3" autoplay="true" loop="true"></audio>
         <div class="row">
             <div class="col-6 offset-3">
                 <video id="video" width="100%">
                     <source src="media/magazine.mp4" type="video/mp4">
                 </video>
             </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-4 offset-5">
+            <br>
+            <div class="col-6 offset-3">
                 <button onclick="playPause()" class="btn btn-primary" id="pp">&#9658;</button>
                 <button onclick="Reset()" class="btn btn-primary">&#9642;</button>
-                <button onclick="volumeUp()" class="btn btn-primary">+</button>
-                <button onclick="volumeDown()" class="btn btn-primary">-</button>
+                <button onclick="volumeUp()" class="btn btn-primary">V+</button>
+                <button onclick="volumeDown()" class="btn btn-primary">V-</button>
+                <button onclick="menos10()" class="btn btn-primary">-10</button>
+                <button onclick="mas10()" class="btn btn-primary">+10</button>
             </div>
         </div>
         <br>
@@ -53,22 +56,22 @@
                     <div class="col col-3">
                         <img src="media/lets_build_a_roof.jpg" width="100%">
                         <div class="album">
-                                <ol type="1">
-                                    <li>Breathing</li><hr>
-                                    <li>Gravel</li><hr>
-                                    <li>Madagascar</li><hr>
-                                    <li>Sing 99 &amp; 90</li><hr>
-                                    <li>Acorn</li><hr>
-                                    <li>The Roof Caves</li><hr>
-                                    <li>Loose Wind</li><hr>
-                                    <li>Winking Sign</li><hr>
-                                    <li>Remote Control Cars</li><hr>
-                                    <li>Dont Give Up</li><hr>
-                                    <li>Christma&#8217;s Island</li><hr>
-                                    <li>Collapsing Homes</li>
-                                </ol>
-                            </div>
+                            <ol type="1">
+                                <li>Breathing</li><hr>
+                                <li>Gravel</li><hr>
+                                <li>Madagascar</li><hr>
+                                <li>Sing 99 &amp; 90</li><hr>
+                                <li>Acorn</li><hr>
+                                <li>The Roof Caves</li><hr>
+                                <li>Loose Wind</li><hr>
+                                <li>Winking Sign</li><hr>
+                                <li>Remote Control Cars</li><hr>
+                                <li>Dont Give Up</li><hr>
+                                <li>Christma&#8217;s Island</li><hr>
+                                <li>Collapsing Homes</li>
+                            </ol>
                         </div>
+                    </div>
                     <div class="col col-3">
                         <img src="media/first_album.jpg" width="100%">
                         <div class="album">
@@ -109,6 +112,8 @@
                 </div>
             </div>
         </div>
+        <br>
+        <br>
     </div>
     <script type="text/javascript" src="js/script.js">
     </script>

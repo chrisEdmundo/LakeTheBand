@@ -1,14 +1,17 @@
 var myVideo = document.getElementById("video"); 
 var pp = document.getElementById("pp");
+var bgsound = document.getElementById("bgsound");
 var vol = 0.1;
 
 function playPause() { 
     if (myVideo.paused){
+        bgsound.pause();
         myVideo.play(); 
         pp.innerHTML='&#10074; &#10074;';
     }
     else {
         myVideo.pause();
+        bgsound.play();
         pp.innerHTML='&#9658; ';
     }
   } 
@@ -30,5 +33,21 @@ function playPause() {
   } 
   function Reset() { 
     myVideo.pause();
+    bgsound.play();
     myVideo.currentTime = 0;
+  }
+  function mas10() { 
+      if(myVideo.duration - myVideo.currentTime > 10){
+        myVideo.currentTime = myVideo.currentTime + 10;
+      }
+      else{
+          myVideo.currentTime = myVideo.duration;
+      }
   } 
+  function menos10() { if(myVideo.currentTime > 10){
+    myVideo.currentTime = myVideo.currentTime - 10;
+  }
+  else{
+      myVideo.currentTime = 0;
+  }
+  }  
